@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <ImageView fitHeight="125.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gridlock-logo.jpg" />
+         </image>
+      </ImageView>
+      <Button id="resumeGameButton" fx:id="resumeGameButton" layoutX="75.0" layoutY="384.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="60.0" prefWidth="250.0" text="Resume" />
+      <Button id="newGameButton" layoutX="75.0" layoutY="300.0" mnemonicParsing="false" onAction="#startNewGame" prefHeight="60.0" prefWidth="250.0" text="New Game" />
+      <Button id ="tutorialButton" layoutX="75.0" layoutY="223.0" mnemonicParsing="false" onAction="#openTutorial" prefHeight="60.0" prefWidth="250.0" text="Tutorial" />
+      <Button id="settingsButton" layoutX="75.0" layoutY="462.0" mnemonicParsing="false" onAction="#openSettings" prefHeight="60.0" prefWidth="250.0" text="Settings" />
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

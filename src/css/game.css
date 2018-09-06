@@ -1,0 +1,49 @@
+.root {
+    -fx-background-color: white;
+}
+
+#gameControlContainer, #gameStateContainer, #settingsContainer {
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
+#newGameButton {
+    -fx-background-color: #00CEAE;
+}
+
+#loadGameButton {
+    -fx-background-color: #E93F3F;
+}
+
+#saveGameButton {
+    -fx-background-color: #CBF732;
+}
+
+#menuButton {
+	-fx-background-color: #C71585;
+}
+
+#undoButton {
+    -fx-background-color: #CBF732;
+}
+
+#redoButton {
+    -fx-background-color: #00CEAE;
+}
+
+#settingsButton {
+    -fx-background-color: #EFD983;
+}
+
+#getHintButton {
+    -fx-background-color: #EFD983;
+}
+
+#gameGrid {
+    -fx-background-color: #e3e9f8;
+}
+
+#newGameButton:hover, #loadGameButton:hover, #saveGameButton:hover, #menuButton:hover, #undoButton:hover, #redoButton:hover, #settingsButton:hover, #getHintButton:hover {
+    -fx-opacity: 0.7;
+}

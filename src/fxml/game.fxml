@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" stylesheets="@../css/game.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <children>
+     <Pane id="gameGrid" fx:id="gameGrid" maxHeight="600.0" maxWidth="600.0" minHeight="600" minWidth="600" prefHeight="600.0" prefWidth="600.0">
+  </Pane>
+     <VBox alignment="TOP_CENTER" maxHeight="724.0" minHeight="600.0" prefWidth="424.0" spacing="15.0">
+        <padding>
+           <Insets left="10.0" right="10.0" />
+        </padding>
+        <children>
+           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+              <VBox.margin>
+                 <Insets top="15.0" />
+              </VBox.margin>
+              <image>
+                 <Image url="@../images/gridlock-logo.jpg" />
+              </image>
+           </ImageView>
+           <Label fx:id="levelLabel" text="Level:" />
+           <Label id="moveNumberLabel" fx:id="moveNumberLabel" text="Move Number: " textAlignment="CENTER" />
+           <VBox id="gameControlContainer" alignment="TOP_CENTER" spacing="15.0">
+              <padding>
+                 <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+              </padding>
+              <VBox.margin>
+                 <Insets left="20.0" right="20.0" />
+              </VBox.margin>
+              <children>
+                 <Button id="newGameButton" fx:id="newGameButton" mnemonicParsing="false" onAction="#startNewGame" prefHeight="50.0" prefWidth="150.0" text="New Game" />
+                 <Button id="saveGameButton" fx:id="saveGameButton" mnemonicParsing="false" onAction="#saveGame" prefHeight="50.0" prefWidth="150.0" text="Save Game" />
+                  <Button id="menuButton" fx:id="menuButton" layoutX="117.0" layoutY="93.0" mnemonicParsing="false" onAction="#menu" prefHeight="50.0" prefWidth="150.0" text="Menu" />
+              </children>
+           </VBox>
+           <HBox id="gameStateContainer" alignment="TOP_CENTER" spacing="15.0">
+              <padding>
+                 <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+              </padding>
+              <VBox.margin>
+                 <Insets left="20.0" right="20.0" />
+              </VBox.margin>
+              <children>
+                 <Button id="undoButton" fx:id="undoButton" mnemonicParsing="false" onAction="#undoStep" prefHeight="50.0" prefWidth="100.0" text="Undo" />
+                 <Button id="redoButton" fx:id="redoButton" mnemonicParsing="false" onAction="#redoStep" prefHeight="50.0" prefWidth="100.0" text="Redo" />
+              </children>
+           </HBox>
+           <HBox id="settingsContainer" alignment="TOP_CENTER" spacing="15.0">
+              <padding>
+                 <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+              </padding>
+              <VBox.margin>
+                 <Insets left="20.0" right="20.0" />
+              </VBox.margin>
+              <children>
+                 <Button id="settingsButton" fx:id="settingsButton" mnemonicParsing="false" onAction="#openSettings" prefHeight="50.0" prefWidth="100.0" text="Settings" />
+                 <Button id="getHintButton" fx:id="getHintButton" mnemonicParsing="false" onAction="#getHint" prefHeight="50.0" prefWidth="100.0" text="Get Hint" />
+              </children>
+           </HBox>
+        </children>
+         <HBox.margin>
+            <Insets bottom="20.0" />
+         </HBox.margin>
+     </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</HBox>

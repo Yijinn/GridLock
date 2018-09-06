@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+.button {
+    -fx-font-weight: bold;
+    -fx-font-size: 14pt;
+}
+
+#tutorialButton:hover, #newGameButton:hover, #resumeGameButton:hover, #settingsButton:hover {
+    -fx-opacity: 0.7;
+}
+
+#tutorialButton {
+    -fx-background-color: #EFD983;
+}
+
+#newGameButton {
+    -fx-background-color: #00CEAE;
+}
+
+#resumeGameButton {
+    -fx-background-color: #E93F3F;
+}
+
+#settingsButton {
+    -fx-background-color: #CBF732;
+}

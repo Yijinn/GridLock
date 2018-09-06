@@ -1,0 +1,14 @@
+#backButton {
+    -fx-background-color: #EFD983;
+}
+
+#backButton:hover {
+    -fx-opacity: 0.7;
+}
+
+
+#colourblindOptionContainer {
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}

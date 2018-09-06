@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Canvas height="370.0" width="450.0" />
+      <VBox minWidth="-Infinity" prefHeight="370.0" prefWidth="220.0">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="220.0">
+               <image>
+                  <Image url="@../images/gridlock-logo.jpg" />
+               </image>
+            </ImageView>
+            <VBox id="gameStateButtons" alignment="CENTER" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" text="New Game" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Save" />
+                  <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" text="Load" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <HBox id="gameActionButtons" alignment="TOP_CENTER" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Undo" />
+                  <Button mnemonicParsing="false" text="Redo" />
+               </children>
+            </HBox>
+            <Button id="getHintButton" mnemonicParsing="false" text="Get Hint!" />
+            <Label id="settingsLabel" text="Settings" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</HBox>

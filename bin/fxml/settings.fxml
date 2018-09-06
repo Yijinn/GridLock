@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="337.0" prefWidth="364.0" spacing="10.0" stylesheets="@../css/settingsMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingsController">
+   <children>
+      <Label text="Settings">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <VBox id="soundOptionContainer" alignment="CENTER" prefHeight="163.0" prefWidth="314.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="118.0" text="Sound">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Slider id="soundSlider" fx:id="soundSlider" prefHeight="14.0" prefWidth="161.0" onDragOver="#onVolumeChange" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="121.0" text="Theme">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox id="themeSelector" fx:id="themeSelector" prefHeight="33.0" prefWidth="165.0" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+      <Button id="backButton" alignment="CENTER" mnemonicParsing="false" onAction="#backButtonPressed" prefWidth="75.0" text="Back">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,15 @@
+#prevButton {
+    -fx-background-color: #00CEAE;
+}
+
+#nextButton {
+    -fx-background-color: #00CEAE;
+}
+
+#returnButton {
+    -fx-background-color: #CBF732;
+}
+
+#prevButton:hover, #nextButton:hover, #returnButton:hover {
+    -fx-opacity: 0.7;
+}
